@@ -1,0 +1,19 @@
+{
+  "name": "node-micro-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "micro": "^9.3.3",
+    "mongoose": "^5.4.19",
+    "node-xlsx": "^0.14.1"
+  }
+}
