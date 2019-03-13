@@ -22,9 +22,9 @@ module.export = class FileParse {
   }
 
   async getFileData() {
-    if (this.fileType === 1) {
+    if (this.fileType === 'csv') {
       return fs.readFileSync(this.filePathName).toString().split('\n').map(i => i.split(','));
-    } else if (this.fileType === 2) {
+    } else if (this.fileType === 'excel') {
       return xlsx.parse(this.filePathName)[0].data;
     } else {
       throw new Error('The file type is not csv or excel');
